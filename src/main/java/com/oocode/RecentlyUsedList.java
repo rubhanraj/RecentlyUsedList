@@ -8,6 +8,7 @@ public class RecentlyUsedList {
 
     public RecentlyUsedList() {
         this.list = new ArrayList<>();
+
     }
 
     public boolean isEmpty() {
@@ -15,6 +16,8 @@ public class RecentlyUsedList {
     }
 
     public void addItem(final String item) {
-
+        list.add(item);
     }
+
+
 }
