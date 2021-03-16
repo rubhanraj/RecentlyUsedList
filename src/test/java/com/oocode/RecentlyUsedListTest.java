@@ -52,6 +52,18 @@ public class RecentlyUsedListTest {
         list.addItem("1");
 
         Assert.assertEquals("1", list.get(0));
-        Assert.assertNull(list.get(1));
+        Assert.assertEquals(1, list.size());
+    }
+
+    @Test
+    public void shouldHaveRecentItemsTowardsTheStartOfTheList1() {
+        final RecentlyUsedList list = new RecentlyUsedList();
+        list.addItem("1");
+        list.addItem("2");
+        list.addItem("1");
+
+        Assert.assertEquals("1", list.get(0));
+        Assert.assertEquals("2", list.get(1));
+        Assert.assertEquals(list.size(), 2);
     }
 }

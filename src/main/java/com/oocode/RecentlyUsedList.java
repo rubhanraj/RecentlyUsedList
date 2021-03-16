@@ -16,7 +16,9 @@ public class RecentlyUsedList {
     }
 
     public void addItem(final String item) {
-       if (!list.contains(item)) { list.add(0, item);}
+       if (!list.contains(item)) {
+           list.add(0, item);
+       }
     }
 
     public String get(final int index){
@@ -25,7 +27,7 @@ public class RecentlyUsedList {
 
 
     public int size() {
-        return 0;
+        return this.list.size();
     }
 }
 
