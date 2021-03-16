@@ -9,4 +9,12 @@ public class RecentlyUsedListTest {
     public void shouldBeEmpty() {
         Assert.assertTrue(new RecentlyUsedList().isEmpty());
     }
+
+    @Test
+    public void shouldAddNewItem() {
+        final RecentlyUsedList list = new RecentlyUsedList();
+        list.addItem("some number");
+
+        Assert.assertFalse(list.isEmpty());
+    }
 }

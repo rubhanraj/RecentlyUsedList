@@ -13,4 +13,8 @@ public class RecentlyUsedList {
     public boolean isEmpty() {
         return this.list.isEmpty();
     }
+
+    public void addItem(final String item) {
+
+    }
 }
