@@ -8,7 +8,14 @@ public class RecentlyUsedList {
     public RecentlyUsedList() {
     }
 
+    /*
     public List<String> getList() {
         return this.list;
+    }
+    */
+
+    public boolean isEmpty() {
+        //if (this.list == null)
+            return true;
     }
 }
