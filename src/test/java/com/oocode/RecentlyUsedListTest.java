@@ -13,10 +13,16 @@ public class RecentlyUsedListTest {
     @Test
     public void shouldAddNewItem() {
         final RecentlyUsedList list = new RecentlyUsedList();
-        list.addItem("some number");
+        list.addItem("123456");
 
         Assert.assertFalse(list.isEmpty());
     }
 
+    @Test
+    public void shouldGetItem() {
+        final RecentlyUsedList list = new RecentlyUsedList();
+        list.addItem("123456");
 
+        Assert.assertEquals("123456", list.get(0));
+    }
 }
