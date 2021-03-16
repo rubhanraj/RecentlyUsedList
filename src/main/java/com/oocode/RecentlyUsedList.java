@@ -19,5 +19,8 @@ public class RecentlyUsedList {
         list.add(item);
     }
 
-
+    public String get(final int index){
+        return list.get(index);
+    }
 }
+
