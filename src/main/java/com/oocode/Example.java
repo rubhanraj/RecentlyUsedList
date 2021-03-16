@@ -5,3 +5,4 @@ public class Example {
 		return 42;	
 	}
 }
+
