@@ -37,4 +37,14 @@ public class RecentlyUsedListTest {
         Assert.assertEquals("2", list.get(1));
         Assert.assertEquals("1", list.get(2));
     }
+
+    @Test
+    public void shouldNotHaveDuplicates() {
+        final RecentlyUsedList list = new RecentlyUsedList();
+        list.addItem("1");
+        list.addItem("1");
+
+        Assert.assertEquals("1", list.get(0));
+        Assert.assertNull(list.get(1));
+    }
 }
