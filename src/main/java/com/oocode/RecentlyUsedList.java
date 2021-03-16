@@ -1,21 +1,16 @@
 package com.oocode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RecentlyUsedList {
     private List<String> list;
 
     public RecentlyUsedList() {
+        this.list = new ArrayList<>();
     }
-
-    /*
-    public List<String> getList() {
-        return this.list;
-    }
-    */
 
     public boolean isEmpty() {
-        //if (this.list == null)
-            return true;
+        return this.list.isEmpty();
     }
 }
