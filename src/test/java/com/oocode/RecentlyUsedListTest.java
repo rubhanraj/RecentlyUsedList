@@ -7,7 +7,11 @@ public class RecentlyUsedListTest {
 
     @Test
     public void shouldBeEmpty() {
+        final RecentlyUsedList list = new RecentlyUsedList();
+
         Assert.assertTrue(new RecentlyUsedList().isEmpty());
+        Assert.assertEquals(list.size(), 0);
+
     }
 
     @Test
@@ -16,6 +20,8 @@ public class RecentlyUsedListTest {
         list.addItem("123456");
 
         Assert.assertFalse(list.isEmpty());
+        Assert.assertEquals(list.size(), 1);
+
     }
 
     @Test
@@ -36,6 +42,7 @@ public class RecentlyUsedListTest {
         Assert.assertEquals("3", list.get(0));
         Assert.assertEquals("2", list.get(1));
         Assert.assertEquals("1", list.get(2));
+        Assert.assertEquals(list.size(), 3);
     }
 
     @Test

@@ -9,7 +9,6 @@ public class RecentlyUsedList {
 
     public RecentlyUsedList() {
         this.list = new LinkedList<>();
-
     }
 
     public boolean isEmpty() {
@@ -17,11 +16,16 @@ public class RecentlyUsedList {
     }
 
     public void addItem(final String item) {
-        list.add(0, item);
+       if (!list.contains(item)) { list.add(0, item);}
     }
 
     public String get(final int index){
         return list.get(index);
+    }
+
+
+    public int size() {
+        return 0;
     }
 }
 
